@@ -1,31 +1,22 @@
-// console.log( 5 - 4 )
-// console.log(54 + +'87')
-// let Age = prompt('Скільки тобі років','')
-// function name (age) {
-//     if (age < 18 ) {
-//         alert('Мені ' + age + ' бо я ше синок')
-//     } if (age > 18) {
-//         alert('Мені ' + age + ' бо я вже великий')
-//     }
-// };
-// name(Age);
+"use strict"
+
+let numberOfFilms = +prompt('Сколько фильмов ви уже посмотрелі?', '');
+
+let personalMoviesDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres:[],
+    privat: false
+}
+
+const a = prompt('Один из последних просмотрених фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотрених фильмов?', ''),
+      d = prompt('На сколько оцените его?', '')
+
+personalMoviesDB.movies[a] = b
+personalMoviesDB.movies[c] = d
+console.log(personalMoviesDB)
 
 
-// let answers = [];
-//
-// answers[0] = prompt('Як тебе звать?','No name')
-//
-// for ( let i = 0; i < 3; i++ ) {
-//      answers[i] = prompt('Як тебе звать?','')
-// }
-// console.log(answers);
-
-// let answers = []
-//
-// answers[0] = prompt('Як тебе звати ?', '')
-// answers[1] = prompt('Яка в тебе фамілія ?', '')
-// answers[2] = prompt('Скільки тобі років ?', '')
-//
-// console.log(typeof(answers))
-// let Name = prompt('Як тебе звать?','')
-// console.log(Name)
